@@ -1,9 +1,9 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/indeedhat/dotenv v0.0.0-20250530135927-23ddeda9168e h1:v/MlWuBzeWsbGcqPdgT0nOOazMdeKSI0IdIX3a9xJnM=
+github.com/indeedhat/dotenv v0.0.0-20250530135927-23ddeda9168e/go.mod h1:bg/0EVVxpdBV+YmQZxdQ5T/NZAo8re/GpGMmU9Rkw6M=
 github.com/indeedhat/icl v0.0.0-20241201163654-3fd7f368648f h1:NqTc5MgNmhuoNIm06/h0MhxPc8ojd2tM98Lr3/Iyjug=
 github.com/indeedhat/icl v0.0.0-20241201163654-3fd7f368648f/go.mod h1:ADr9N4x85iPXFOyj7sbWp7IfzCHn/4a9tAI+T8754Lk=
-github.com/indeedhat/malcolm v0.0.0-20251017132135-b5b615df8282 h1:CKITN+KtmOCc5XyzxF3hWBdStQAXhIDMJc6GdRHc1RU=
-github.com/indeedhat/malcolm v0.0.0-20251017132135-b5b615df8282/go.mod h1:tv/ZkH239M23ZZBs0QfuG0ZiPcruVBq4elH87Ge32/Q=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.11.1 h1:7s2iGBzp5EwR7/aIZr8ao5+dra3wiQyKjjFuvgVKu7U=
