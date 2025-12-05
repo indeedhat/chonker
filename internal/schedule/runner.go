@@ -3,10 +3,12 @@ package schedule
 import (
 	"context"
 	"time"
+
+	"github.com/indeedhat/chonker/internal/types"
 )
 
-type TriggerFunc func(float32) error
-type ReportFunc func(error)
+type TriggerFunc func(float32) types.Report
+type ReportFunc func(types.Report)
 
 type Runner struct {
 	sched   Schedule
@@ -28,11 +30,12 @@ func (r Runner) Start(ctx context.Context) {
 			return
 		case <-ticker.C:
 			meal := r.sched.Now()
-			if meal != nil {
-				err := r.trigger(meal.Weight)
-				if err != nil || r.sched.ReportOnSuccess {
-					r.report(err)
-				}
+			if meal == nil {
+				break
+			}
+
+			if rep := r.trigger(meal.Weight); rep.Error() != nil || r.sched.ReportOnSuccess {
+				r.report(rep)
 			}
 		}
 	}

@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/indeedhat/chonker/internal/types"
 	"github.com/indeedhat/dotenv"
 )
 
@@ -17,12 +18,6 @@ var (
 	authToken      dotenv.String = "PB_AUTH"
 )
 
-type Report interface {
-	Error() error
-	Message() string
-	Title() string
-}
-
 type pushMessage struct {
 	Type  string `json:"type"`
 	Email string `json:"email"`
@@ -30,7 +25,7 @@ type pushMessage struct {
 	Body  string `json:"body"`
 }
 
-func ReportOnFeed(r Report) {
+func ReportOnFeed(r types.Report) {
 	msg := pushMessage{
 		Type:  "note",
 		Email: recipientEmail.Get(),

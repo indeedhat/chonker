@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/indeedhat/chonker/internal/schedule"
+	"github.com/indeedhat/chonker/internal/types"
 )
 
 func main() {
@@ -23,10 +24,10 @@ func main() {
 
 	runner := schedule.NewRunner(
 		sched,
-		func(f float32) error {
+		func(f float32) types.Report {
 			return nil
 		},
-		func(err error) {},
+		func(r types.Report) {},
 	)
 
 	runner.Start(ctx)
