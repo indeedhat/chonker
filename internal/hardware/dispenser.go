@@ -26,7 +26,7 @@ var (
 	dispenseTimeout dotenv.Int = "DISPENSE_TIMEOUT"
 )
 
-func Disponse(weight float32) Report {
+func Disponse(weight float64) Report {
 	ctx, cancel := context.WithTimeout(time.Second * time.Duration(dispenseTimeout.Get()))
 
 	svo := newServo()

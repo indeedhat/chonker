@@ -7,7 +7,7 @@ import (
 	"github.com/indeedhat/chonker/internal/types"
 )
 
-type TriggerFunc func(float32) types.Report
+type TriggerFunc func(float64) types.Report
 type ReportFunc func(types.Report)
 
 type Runner struct {

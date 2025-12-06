@@ -24,7 +24,7 @@ func main() {
 
 	runner := schedule.NewRunner(
 		sched,
-		func(f float32) types.Report {
+		func(f float64) types.Report {
 			return nil
 		},
 		func(r types.Report) {},

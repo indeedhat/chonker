@@ -71,7 +71,7 @@ func (d Day) Now() *Meal {
 
 type Meal struct {
 	TimeOfDay string  `icl:".param"`
-	Weight    float32 `icl:"weight_g"`
+	Weight    float64 `icl:"weight_g"`
 	Silent    bool    `icl:"silent"`
 }
 
